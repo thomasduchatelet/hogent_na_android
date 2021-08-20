@@ -7,22 +7,54 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.tequilapp.FirstFragment"
+        android:name="com.example.tequilapp.barlist.BarListFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/bar_list_fragment">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_FirstFragment_to_rateBarFragment"
+            app:destination="@id/rateBarFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.tequilapp.SecondFragment"
+        android:name="com.example.tequilapp.addbar.AddBarFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/add_bar_fragment">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.tequilapp.about.AboutFragment"
+        android:label="@string/about_tequilapp" />
+    <fragment
+        android:id="@+id/rateBarFragment"
+        android:name="com.example.tequilapp.ratebar.RateBarFragment"
+        android:label="Rate Bar">
+        <action
+            android:id="@+id/action_rateBarFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@anim/fall_down"
+            app:popEnterAnim="@anim/fall_down" />
+        <argument
+            android:name="barId"
+            app:argType="long" />
     </fragment>
 </navigation>

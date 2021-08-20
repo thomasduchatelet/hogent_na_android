@@ -2,11 +2,27 @@
     <string name="app_name">TequilApp</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Bars</string>
+    <string name="second_fragment_label">Add Bar</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="sort_name">Name</string>
+    <string name="sort_price">Price</string>
+    <string name="sort_rating">Rating</string>
+    <string name="sort_price_rating">€ / Rating</string>
+    <string name="add_rating">Add rating</string>
+    <string name="bar_price">€ 0</string>
+    <string name="bar_name">Name</string>
+    <string name="show_filters">Show filters</string>
+    <string name="show_sort_options">Show sort options</string>
+    <string name="about">About</string>
+    <string name="about_tequilapp">About TequilApp</string>
+    <string name="about_text">  TequilApp tracks the tequila price and quality of different bars. With TequilApp you can find the bar with the best or cheapest tequila shots!
+                                Check the overview for all bars or click the plus icon to add a new bar. You can also rate these bars yourself by clicking them in the overview!
+    </string>
+    <string name="save">Save</string>
 </resources>
